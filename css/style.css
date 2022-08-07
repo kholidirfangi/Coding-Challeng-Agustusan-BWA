@@ -1,0 +1,310 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-ExtraBold.ttf');
+}
+
+:root {
+  --base-text-color: #232631;
+  --base-color: #5a4fcf;
+  --secondary-color: #fdc886;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: #f8f7f7;
+}
+
+.navbar {
+  position: relative;
+}
+
+.nav-item .nav-link {
+  color: var(--base-text-color);
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-family: Nunito;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.navbar-brand img {
+  width: 27px;
+  height: 28px;
+}
+
+.search {
+  color: #858585;
+}
+
+.login {
+  background: rgba(90, 79, 207, 0.1);
+  color: var(--base-color);
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+button.login:hover {
+  background: var(--base-color);
+  color: #fff;
+}
+
+.nav-item .active {
+  border-bottom: 2px solid var(--base-color);
+}
+
+.icon-search {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-left: 20px;
+}
+
+.container-search {
+  width: 300px;
+}
+
+.search-input {
+  width: 800px;
+  padding-left: 50px;
+}
+
+.ads {
+  height: 564px;
+}
+
+.card-thumb {
+  width: 390px;
+  height: 297px;
+  position: absolute;
+  top: 133px;
+  left: 55px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.rating {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.rating-number {
+  color: #ffb800;
+  font-size: 20px;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+}
+
+.download,
+.offer-description {
+  color: #656565;
+  font-size: 16px;
+}
+
+.thumb {
+  color: #232631;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.idr {
+  color: #656565;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 5px;
+  margin-left: 10px;
+}
+
+.idr-near-resto {
+  color: #656565;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 5px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.location,
+.info {
+  margin-left: 10px;
+  color: #656565;
+}
+
+.btn-base {
+  color: #232631;
+  background: #fdc886;
+  width: 226px;
+  height: 56px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.btn-base:hover,
+.go-to:hover {
+  background: #fcb65f;
+}
+
+.heading-section-text {
+  color: var(--base-color);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #232631;
+}
+
+.sub-heading-32 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #232631;
+}
+
+.bg-wrap {
+  background: #fff4e7;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 35px;
+  margin-top: 24px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.offer {
+  width: 315px;
+  background: #fff;
+}
+
+.offer-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #232631;
+}
+
+.detail {
+  background: transparent;
+  width: 100%;
+  height: 72px;
+  border: none;
+  border-radius: 12px;
+  color: #232631;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.4s;
+}
+
+.detail:hover {
+  background: #fdc886;
+}
+
+.restaurant-info {
+  width: 352px;
+  height: 131px;
+  border-radius: 24px;
+  background: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 33px;
+}
+
+.restaurant-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #232631;
+  margin-left: 20px;
+}
+
+.go-to {
+  width: 36px;
+  height: 36px;
+  background: #fdc886;
+  border-radius: 12px;
+  position: absolute;
+  right: 25px;
+  top: 45px;
+  cursor: pointer;
+}
+
+.go-to .right-arrow {
+  width: 24px;
+  height: 24px;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.location-box {
+  width: 252px;
+  height: 64px;
+  background: #f2f2f2;
+  border-radius: 12px;
+}
+
+.tanda {
+  transform: rotate(90deg);
+}
+
+.food {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #656565;
+}
+
+.chefs-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #232631;
+}
+
+.location-chefs {
+  color: #656565;
+}
+
+img:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.list-chefs {
+  width: 596px;
+  height: 141px;
+  border-radius: 24px;
+  padding: 20px;
+}
+
+.list-chefs:hover {
+  background: #fff;
+  transition: 0.3s;
+}
+
+.list-chefs:hover .profile-details {
+  background: #fff;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.profile-details {
+  color: #fdc886;
+  font-size: 16px;
+  visibility: hidden;
+  cursor: pointer;
+}
